@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemoriaViewController" customModule="JogoDaMemoria" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="AmN-ys-nrN"/>
+                <outletCollection property="cardBotoes" destination="Ovr-MM-ves" collectionClass="NSMutableArray" id="gIB-y0-IXZ"/>
+                <outletCollection property="cardBotoes" destination="Dwu-9b-W1Y" collectionClass="NSMutableArray" id="QSE-LS-S2x"/>
+                <outletCollection property="cardBotoes" destination="yVI-d3-9nv" collectionClass="NSMutableArray" id="LKs-82-Jp0"/>
+                <outletCollection property="cardBotoes" destination="cLJ-KC-Bpf" collectionClass="NSMutableArray" id="b3X-Q4-eD5"/>
+                <outletCollection property="cardBotoes" destination="woE-0O-1yI" collectionClass="NSMutableArray" id="pst-1n-XHt"/>
+                <outletCollection property="cardBotoes" destination="rGR-Xg-wo6" collectionClass="NSMutableArray" id="ck4-7d-Cfv"/>
+                <outletCollection property="cardBotoes" destination="B1w-RC-zhR" collectionClass="NSMutableArray" id="1cp-Rf-Vnl"/>
+                <outletCollection property="cardBotoes" destination="a8C-Ur-0YJ" collectionClass="NSMutableArray" id="KiN-gd-7w2"/>
+                <outletCollection property="cardBotoes" destination="y7q-fI-v3d" collectionClass="NSMutableArray" id="wR4-4A-bfB"/>
+                <outletCollection property="cardBotoes" destination="ymJ-ry-Tgu" collectionClass="NSMutableArray" id="Faa-I1-CCN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTl-zN-XlH" userLabel="reiniciarBotao">
+                    <rect key="frame" x="729" y="35" width="40" height="40"/>
+                    <state key="normal" image="ic_reiniciar"/>
+                    <connections>
+                        <action selector="toqueBotaoResetar:" destination="-1" eventType="touchUpInside" id="7UZ-00-MGj"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pc2-AK-Hk6">
+                    <rect key="frame" x="113" y="105" width="670" height="260"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jHo-i1-cd5">
+                            <rect key="frame" x="0.0" y="0.0" width="670" height="126"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovr-MM-ves" userLabel="cardUmBotao" customClass="CardButtonController" customModule="JogoDaMemoria" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="ooz-Je-z3x"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwu-9b-W1Y" userLabel="cardDoisBotao">
+                                    <rect key="frame" x="136" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="CPc-7X-1dm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVI-d3-9nv" userLabel="cardTresBotao">
+                                    <rect key="frame" x="272" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="x8A-7H-x8t"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLJ-KC-Bpf" userLabel="cardQuatroBotao">
+                                    <rect key="frame" x="408" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="lQf-7w-p84"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woE-0O-1yI" userLabel="cardCincoBotao">
+                                    <rect key="frame" x="544" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="erH-dZ-art"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fBN-nf-y89">
+                            <rect key="frame" x="0.0" y="134" width="670" height="126"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGR-Xg-wo6" userLabel="cardUmBotao">
+                                    <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="Lgp-dd-hgf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1w-RC-zhR" userLabel="cardDoisBotao">
+                                    <rect key="frame" x="136" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="jx4-el-FQX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8C-Ur-0YJ" userLabel="cardTresBotao">
+                                    <rect key="frame" x="272" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="5oH-Wq-SfC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7q-fI-v3d" userLabel="cardQuatroBotao">
+                                    <rect key="frame" x="408" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="hbN-Ld-z9U"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymJ-ry-Tgu" userLabel="cardCincoBotao">
+                                    <rect key="frame" x="544" y="0.0" width="126" height="126"/>
+                                    <state key="normal" image="card"/>
+                                    <connections>
+                                        <action selector="toqueCardBotao:" destination="-1" eventType="touchUpInside" id="cwW-Mr-6im"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OTl-zN-XlH" secondAttribute="trailing" constant="83" id="Odd-ck-10h"/>
+                <constraint firstItem="OTl-zN-XlH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="Xbc-nk-gb1"/>
+                <constraint firstItem="pc2-AK-Hk6" firstAttribute="top" secondItem="OTl-zN-XlH" secondAttribute="bottom" constant="30" id="gX7-Wi-EMO"/>
+                <constraint firstItem="pc2-AK-Hk6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mR6-Ip-kuV"/>
+            </constraints>
+            <point key="canvasLocation" x="138.61607142857142" y="152.17391304347828"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card" width="126" height="126"/>
+        <image name="ic_reiniciar" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
